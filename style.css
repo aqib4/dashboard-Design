@@ -1,0 +1,375 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.Main {
+  background-color: rgb(224, 224, 224);
+  display: flex;
+}
+.side-nav {
+  background-color: rgb(169, 215, 255);
+  height: 100vh;
+  width: 88px;
+  overflow: hidden;
+}
+.side-nav:hover {
+  width: 250px;
+}
+.nav {
+  position: relative;
+  top: 15%;
+  padding: 0 1.7rem;
+  height: 88%;
+}
+.nav li {
+  padding: 0.7rem 4.9rem 0.7rem 0.6rem;
+  margin: 5px;
+  border-radius: 5px;
+}
+.nav li:hover,
+.active {
+  background-color: rgba(89, 159, 220, 0.785);
+}
+
+.nav li a {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+}
+.nav li a i {
+  font-size: 1.2rem;
+}
+.logout {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  width: 70%;
+}
+.dashbaord {
+  position: relative;
+  background-color: rgb(224, 224, 224);
+  height: 100vh;
+  width: 100%;
+}
+.Primary-dashbaord {
+  background-color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.primary-right-side {
+  color: rgb(97, 173, 239);
+}
+.primary-left-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+.search-form {
+  background-color: rgb(234, 227, 227);
+  border-radius: 5px;
+  color: rgb(169, 215, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 10px;
+}
+.search-form i {
+  cursor: pointer;
+  transition: all 0.9 ease-in;
+}
+.search-form i:hover {
+  transform: scale(1.2);
+}
+input {
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+}
+.User,
+.img {
+  background-image: url("images/user.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.Daily-data {
+  background-color: white;
+  height: 200px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.payment-order,
+.payment-customer,
+.payment-amount,
+.payment-proceed {
+  background-color: rgba(207, 255, 255, 0.863);
+  padding: 20px 20px;
+  border-radius: 5px;
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-amount {
+  background-color: rgba(250, 235, 215, 0.779);
+}
+.payment-customer {
+  background-color: rgba(238, 130, 238, 0.425);
+}
+.payment-proceed {
+  background-color: rgba(181, 220, 255, 0.829);
+}
+
+.order span,
+.customer span,
+.amount span,
+.payment-proceed span {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.order h2,
+.customer h2,
+.amount h2,
+.payment-proceed h2 {
+  font-size: 25px;
+  letter-spacing: 2.5px;
+}
+.payment-order i,
+.payment-customer i,
+.payment-amount i,
+.payment-proceed i {
+  background-color: purple;
+  font-size: 20px;
+  color: aliceblue;
+  border-radius: 100%;
+  padding: 15px;
+}
+.payment-amount i {
+  background-color: red;
+}
+.payment-customer i {
+  background-color: rgb(58, 252, 187);
+}
+.payment-proceed i {
+  background-color: rgb(250, 215, 215);
+}
+.card-number {
+  margin-top: 30px;
+  letter-spacing: 3.5px;
+}
+.finance-data {
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+.finance-info {
+  width: 100%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+table th {
+  padding: 5px;
+}
+
+table tr td {
+  padding: 5px;
+}
+
+/* Tablet Responsive */
+@media all and (max-width: 1185px) {
+  .Main {
+    background-color: red;
+  }
+  .side-nav {
+    background-color: rgb(36, 92, 142);
+    height: 100vh;
+    width: 80px;
+    overflow: hidden;
+  }
+  .dashbaord {
+    width: 94%;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .nav {
+    padding: 0px 0.7rem;
+  }
+  .logout {
+    position: absolute;
+    bottom: 20px;
+    left: 12px;
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 965px) {
+  .Daily-data {
+    padding: 20px 15px;
+  }
+  .payment-order i,
+  .payment-customer i,
+  .payment-amount i,
+  .payment-proceed i {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .order h2,
+  .customer h2,
+  .amount h2,
+  .payment-proceed h2 {
+    font-size: 18px;
+    letter-spacing: 2.2px;
+  }
+  .payment-order,
+  .payment-customer,
+  .payment-amount,
+  .payment-proceed {
+    padding: 10px 10px;
+  }
+  .order span,
+  .customer span,
+  .amount span,
+  .payment-proceed span {
+    font-size: 11px;
+    letter-spacing: 0.6px;
+  }
+}
+
+@media all and (max-width: 868px) {
+  .nav {
+    padding: 0px 0.5rem;
+  }
+  .logout {
+    position: absolute;
+    bottom: 20px;
+    left: 9px;
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 760px) {
+  .Main {
+    display: flex;
+    flex-direction: column;
+  }
+  .side-nav {
+    background-color: rgb(36, 92, 142);
+    width: 100%;
+    overflow: hidden;
+    height: 40vh;
+  }
+  .nav {
+    position: relative;
+    top: 10%;
+    padding: 0 0.7rem;
+  }
+  .nav li {
+    display: inline-block;
+  }
+  .nav li {
+    padding: 0.7rem 1.9rem 0.7rem 0.6rem;
+    margin: 2px;
+    border-radius: 5px;
+  }
+  .nav li a {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5px;
+  }
+  .logout {
+    position: relative;
+    top: -1%;
+    left: 56%;
+    width: 15%;
+  }
+  .side-nav:hover {
+    width: 100%;
+  }
+  .dashbaord {
+    width: 100%;
+  }
+  .scrollit {
+    overflow-x: auto;
+  }
+}
+
+@media all and (max-width: 682px) {
+  .Daily-data {
+    background-color: white;
+    height: 260px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 655px) {
+  .logout {
+    position: absolute;
+    top: 68px;
+    left: 75%;
+    width: 30%;
+  }
+  .nav li {
+    display: inline-block;
+  }
+  .scrollit {
+    overflow-x: auto;
+  }
+}
+
+@media all and (max-width: 581px) {
+  .Daily-data {
+    padding: 20px 10px;
+    gap: 5px;
+  }
+  .nav li {
+    display: inline-block;
+  }
+  .scrollit {
+    overflow-x: auto;
+  }
+}
